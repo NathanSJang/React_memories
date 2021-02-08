@@ -1,6 +1,10 @@
-const PostMessage = require('../models/post');
+const PostMessage = require('../../models/post');
 
-export const index = async(req, res) => {
+module.exports = {
+  getPosts,
+}
+
+async function getPosts (req, res) {
   try {
     const postMessage = await PostMessage.find();
 
