@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { TextField, Button, Typography, Paper } from '@material-ui/core'
 import FileBase from "react-file-base64";
 import { useDispatch, useSelector } from 'react-redux'
+import { createPost, updatePost } from '../../utilities/redux/actions/posts'
 import  useStyles  from "./styles";
 
 export default function Form({ currentId, setCurrentId }) {
@@ -18,6 +19,12 @@ export default function Form({ currentId, setCurrentId }) {
 
   function handleSumbmit(evt) {
     evt.preventDefault();
+
+    if(currentId) {
+      dispatch(updatePost(currentId, postData));
+    } else {
+      dispatch(createPost(postData));
+    }
     clear();
   }
 
