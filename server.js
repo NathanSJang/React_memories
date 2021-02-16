@@ -28,7 +28,7 @@ app.use(cors());
 // Put API routes here, before the "catch all" route
 app.use('/', indexRouter);
 app.use('/posts',postRouter);
-app.use('/user', userRouter);
+app.use('/users', userRouter);
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests

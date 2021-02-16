@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Avatar, Button, Paper, Grid, Typography, Container, TextField } from '@material-ui/core';
 import { GoogleLogin } from 'react-google-login';
 import { useDispatch } from 'react-redux';
-import { singin, signup } from '../../utilities/redux/actions/auth';
+import { signin, signup } from '../../utilities/redux/actions/auth';
 import LockOoutLinedIcon from '@material-ui/icons/LockOutlined';
 import Input from './Input';
 import Icon from './Icon';
@@ -23,7 +23,7 @@ export default function Auth() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    
+    console.log(formData)
     if(isSignup) {
       dispatch(signup(formData, history))
     } else {
@@ -41,7 +41,7 @@ export default function Auth() {
 
   function switchMode() {
     setIsSignup((preIsSignup) => !preIsSignup)
-    handleShowPassword(false);
+    setShowPassword(false);
   };
 
   async function googleSuccess(res) {
@@ -73,14 +73,14 @@ export default function Auth() {
               isSignup && (
                 <>
                   <Input 
-                  name="firstname" 
+                  name="firstName" 
                   label="First name" 
                   handleChange={handleChange}
                   autoFocus
                   half
                   />
                   <Input 
-                  name="lasttname" 
+                  name="lastName" 
                   label="Last name" 
                   handleChange={handleChange}
                   autoFocus
@@ -141,7 +141,7 @@ export default function Auth() {
           <Grid container justify="flex-end">
             <Grid item>
               <Button onClick={switchMode}>
-                { isSignup ? 'Already have an accout? Sign In' : "Don't have an account? Sing Up"}
+                { isSignup ? 'Already have an accout? Sign In' : "Don't have an account? Sign Up"}
               </Button>
             </Grid>
           </Grid>
