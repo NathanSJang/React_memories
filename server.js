@@ -8,10 +8,9 @@ const logger = require('morgan');
 require('dotenv').config();
 require('./config/database');
 
-const indexRouter = require('./routes/index')
-const postRouter = require('./routes/api/posts')
-
-
+const indexRouter = require('./routes/index');
+const postRouter = require('./routes/api/posts');
+const userRouter = require('./routes/api/users');
 
 const app = express();
 
@@ -29,6 +28,7 @@ app.use(cors());
 // Put API routes here, before the "catch all" route
 app.use('/', indexRouter);
 app.use('/posts',postRouter);
+app.use('/user', userRouter);
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
