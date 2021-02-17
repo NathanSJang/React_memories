@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Memories/static/css/main.afd7172b.chunk.css",
-    "main.js": "/Memories/static/js/main.3a928981.chunk.js",
-    "main.js.map": "/Memories/static/js/main.3a928981.chunk.js.map",
-    "runtime-main.js": "/Memories/static/js/runtime-main.9b38532d.js",
-    "runtime-main.js.map": "/Memories/static/js/runtime-main.9b38532d.js.map",
-    "static/js/2.149f7c04.chunk.js": "/Memories/static/js/2.149f7c04.chunk.js",
-    "static/js/2.149f7c04.chunk.js.map": "/Memories/static/js/2.149f7c04.chunk.js.map",
-    "static/js/3.3e58c5ba.chunk.js": "/Memories/static/js/3.3e58c5ba.chunk.js",
-    "static/js/3.3e58c5ba.chunk.js.map": "/Memories/static/js/3.3e58c5ba.chunk.js.map",
-    "index.html": "/Memories/index.html",
-    "static/css/main.afd7172b.chunk.css.map": "/Memories/static/css/main.afd7172b.chunk.css.map",
-    "static/js/2.149f7c04.chunk.js.LICENSE.txt": "/Memories/static/js/2.149f7c04.chunk.js.LICENSE.txt",
-    "static/media/memories.9cfa8a46.png": "/Memories/static/media/memories.9cfa8a46.png"
+    "main.css": "/React_memories/static/css/main.afd7172b.chunk.css",
+    "main.js": "/React_memories/static/js/main.3a928981.chunk.js",
+    "main.js.map": "/React_memories/static/js/main.3a928981.chunk.js.map",
+    "runtime-main.js": "/React_memories/static/js/runtime-main.a36b5a6b.js",
+    "runtime-main.js.map": "/React_memories/static/js/runtime-main.a36b5a6b.js.map",
+    "static/js/2.149f7c04.chunk.js": "/React_memories/static/js/2.149f7c04.chunk.js",
+    "static/js/2.149f7c04.chunk.js.map": "/React_memories/static/js/2.149f7c04.chunk.js.map",
+    "static/js/3.3e58c5ba.chunk.js": "/React_memories/static/js/3.3e58c5ba.chunk.js",
+    "static/js/3.3e58c5ba.chunk.js.map": "/React_memories/static/js/3.3e58c5ba.chunk.js.map",
+    "index.html": "/React_memories/index.html",
+    "static/css/main.afd7172b.chunk.css.map": "/React_memories/static/css/main.afd7172b.chunk.css.map",
+    "static/js/2.149f7c04.chunk.js.LICENSE.txt": "/React_memories/static/js/2.149f7c04.chunk.js.LICENSE.txt",
+    "static/media/memories.9cfa8a46.png": "/React_memories/static/media/memories.9cfa8a46.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b38532d.js",
+    "static/js/runtime-main.a36b5a6b.js",
     "static/js/2.149f7c04.chunk.js",
     "static/css/main.afd7172b.chunk.css",
     "static/js/main.3a928981.chunk.js"
