@@ -2,7 +2,7 @@ import axios from 'axios';
 
 console.log(process.env.DATABASE_URL);
 
-const API = axios.create({ baseURL: 'https://memories-nj.herokuapp.com/' });
+const API = axios.create({ baseURL: 'https://memories-nj.herokuapp.com' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
