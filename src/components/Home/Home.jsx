@@ -6,7 +6,6 @@ import Posts from '../Posts/Posts';
 import Form from '../Form/Form';
 import { getPosts } from "../../utilities/redux/actions/posts";
 
-import useStyles from "./styles";
 
 export default function Home() {
   const [currentId, setCurrentId] = useState(null);

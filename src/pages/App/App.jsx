@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import { Switch, BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { Container } from "@material-ui/core";
 
 import Navbar from '../../components/Navbar/Navbar';
@@ -14,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/auth" exact component={Auth} />
+          <Redirect to="/" />
         </Switch>
       </Container>
     </BrowserRouter>
