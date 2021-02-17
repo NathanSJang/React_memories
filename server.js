@@ -8,11 +8,11 @@ const logger = require('morgan');
 require('dotenv').config();
 require('./config/database');
 
+const app = express();
+
 const indexRouter = require('./routes/index');
 const postRouter = require('./routes/api/posts');
 const userRouter = require('./routes/api/users');
-
-const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
