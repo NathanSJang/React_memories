@@ -26,7 +26,6 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true}));
 app.use(cors());
 
 // Put API routes here, before the "catch all" route
-app.use('/', indexRouter);
 app.use('/posts',postRouter);
 app.use('/users', userRouter);
 
