@@ -14,7 +14,7 @@ React Codealong
 # Technologies Used:
 
 - React & AJAX & Javascript : Frontend component
-- Redux : Manage state
+- Redux : Manage React state
 - CSS & Material-ui : Styling
 - Node Js : Non blocking network process
 - Express : MVC routing
