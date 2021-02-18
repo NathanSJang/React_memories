@@ -20,8 +20,4 @@ React Codealong
 # Getting started
 
 - For test user: ID - test@email.com PW: test
-- [Visit KUSAKABE](https://memories-nj.herokuapp.com/)
-
-# Next steps:
-
-- Add contect form and connect with Email
+- [Visit Memories](https://memories-nj.herokuapp.com/)
