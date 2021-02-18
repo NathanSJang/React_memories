@@ -2,6 +2,11 @@
 
 React Codealong
 
+# Getting started
+
+- For test user: ID - test@email.com PW: test
+- [Visit Memories](https://memories-nj.herokuapp.com/)
+
 # Images
 
 <img src="https://i.imgur.com/wCoNAA4.png">
@@ -16,8 +21,3 @@ React Codealong
 - Mongo DB : Data server
 - Mongoose : Manage object mapping between Node Js and MongoDB
 - Heroku : deploy
-
-# Getting started
-
-- For test user: ID - test@email.com PW: test
-- [Visit Memories](https://memories-nj.herokuapp.com/)
