@@ -1,5 +1,5 @@
 const PostMessage = require('../../models/post');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 module.exports = {
   getPosts,
@@ -48,7 +48,7 @@ async function deletePost(req, res) {
   
   if(!mongoose.Types.ObjectId.isValid(_id)) {
     res.status(404).send('No post with that id');
-  }
+  };
   const post = await PostMessage.findByIdAndRemove(_id);
   console.log('DELETE!');
   res.json({ message: 'Post Deleted Successfully' });
@@ -58,11 +58,11 @@ async function likePost(req, res) {
   const { id: _id } = req.params;
   // checking user
   // req.body passing through auth middleware so it has req.userId probs
-  if(!req.userId) return res.json({ message: 'Unauthenticated' })
+  if(!req.userId) return res.json({ message: 'Unauthenticated' });
   
   if(!mongoose.Types.ObjectId.isValid(_id)) {
     res.status(404).send('No post with that id');
-  }
+  };
   
   const post = await PostMessage.findById(_id);
   const index = post.likes.findIndex((id) => id === String(req.userId));
@@ -72,8 +72,8 @@ async function likePost(req, res) {
   } else {
     // dislike a post
     post.likes = post.likes.filter((id) => id !== String(req.userId));
-  }
+  };
   const updatedPost = await PostMessage.findByIdAndUpdate(_id, post, { new: true });
 
-  res.json(updatedPost)
+  res.json(updatedPost);
 }

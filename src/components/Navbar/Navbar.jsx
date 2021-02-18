@@ -14,10 +14,8 @@ export default function Navbar() {
   const history = useHistory();
   const location = useLocation();
 
-  console.log('user: ', user)
-
   function logout() {
-    dispatch({ type: 'LOGOUT' })
+    dispatch({ type: 'LOGOUT' });
 
     history.push('/');
     setUser(null);
@@ -30,10 +28,10 @@ export default function Navbar() {
       const decodedToken = decode(token);
 
       if(decodedToken.exp * 1000 < new Date().getTime()) logout();
-    }
+    };
 
-    setUser(JSON.parse(localStorage.getItem('profile')))
-  }, [location])
+    setUser(JSON.parse(localStorage.getItem('profile')));
+  }, [location]);
 
   return( 
     <AppBar className={classes.appBar} position="static" color="inherit">

@@ -23,24 +23,23 @@ export default function Auth() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData)
     if(isSignup) {
-      dispatch(signup(formData, history))
+      dispatch(signup(formData, history));
     } else {
-      dispatch(signin(formData, history))
-    }
+      dispatch(signin(formData, history));
+    };
   };
 
   function handleChange(e) {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   function handleShowPassword() {
-    setShowPassword((prevShowPassword) => !prevShowPassword)
+    setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
   function switchMode() {
-    setIsSignup((preIsSignup) => !preIsSignup)
+    setIsSignup((preIsSignup) => !preIsSignup);
     setShowPassword(false);
   };
 
@@ -49,14 +48,14 @@ export default function Auth() {
     const token = res?.tokenId;
     try {
       dispatch({ type: 'AUTH', data: { result, token } });
-      history.push('/')
+      history.push('/');
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
   function googleFailure(error) {
-    console.log(error)
+    console.log(error);
     console.log("Google Sign In was unsuccessful. Try Again");
   };
 

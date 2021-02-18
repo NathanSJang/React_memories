@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [currentId, dispatch])
+  }, [currentId, dispatch]);
 
   return(
     <Grow in>

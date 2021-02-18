@@ -10,7 +10,6 @@ require('./config/database');
 
 const app = express();
 
-const indexRouter = require('./routes/index');
 const postRouter = require('./routes/api/posts');
 const userRouter = require('./routes/api/users');
 
@@ -40,6 +39,6 @@ app.get('/*', function(req, res) {
 const port = process.env.PORT || 3001;
 
 app.listen(port, function() {
-  console.log(`Express app running on port ${port}`)
+  console.log(`Express app running on port ${port}`);
 });
 
